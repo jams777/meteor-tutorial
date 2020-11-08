@@ -1,0 +1,11 @@
+version: '1.0'
+
+services:
+  docker-frogue-local:
+    image: meteor-tutorial
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+      - 3001:3001
